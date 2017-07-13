@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/image_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_alignBottom="@id/viewPager"
+            app:ci_drawable="@drawable/indicator_selected"
+            app:ci_drawable_unselected="@drawable/indicator" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/TextStyle.ValueTitle"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_container"
+        android:minHeight="45dp"
+        android:text="FOOD" />
+
+    <com.ixbiopharma.glucose.component.EmptyViewRv
+        android:id="@+id/item_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <LinearLayout
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_rv"
+        android:layout_toEndOf="@+id/textView2"
+        android:gravity="center"
+        android:minHeight="45dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edittText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="start|center_vertical"
+            android:hint="What did you have?"
+            android:imeOptions="actionSend"
+            android:maxLines="1"
+            android:minHeight="45dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textColorHint="@color/light_gray2"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <com.ixbiopharma.glucose.component.EmptyViewRv
+        android:id="@+id/hint_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/empty_view"
+        android:background="#f5f5f5" />
+</RelativeLayout>

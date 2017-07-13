@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:meal="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingEnd="10dp"
+    android:paddingStart="10dp">
+
+    <com.ixbiopharma.glucose.component.MealItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/f1"
+        meal:iconRes="@drawable/ic_happy"
+        meal:text="Happy" />
+
+    <com.ixbiopharma.glucose.component.MealItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        meal:iconRes="@drawable/ic_excited"
+        android:id="@+id/f2"
+        meal:text="Excited" />
+
+    <com.ixbiopharma.glucose.component.MealItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        meal:iconRes="@drawable/ic_relaxed"
+        android:id="@+id/f3"
+        meal:text="Relaxed" />
+
+    <com.ixbiopharma.glucose.component.MealItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/f4"
+        android:layout_weight="1"
+        meal:iconRes="@drawable/ic_tired"
+        meal:text="Tired" />
+
+</LinearLayout>

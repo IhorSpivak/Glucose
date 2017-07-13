@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "771073460511",
+    "firebase_url": "https://biofit-ae3e2.firebaseio.com",
+    "project_id": "biofit-ae3e2",
+    "storage_bucket": "biofit-ae3e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771073460511:android:03ac77545432bbda",
+        "android_client_info": {
+          "package_name": "com.ixbiopharma.glucose"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771073460511-dp3pdvtklff6j5hd25lqldu3l9vhdr15.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYuY7ZcxZOSPRDaErS_cPwdgHxAQM4RkY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771073460511:android:9a815b7e698250e1",
+        "android_client_info": {
+          "package_name": "com.ixbiopharma.glucose.internal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771073460511-kd39t5kd9o0vrd2oa3ul4plg5ho36gju.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ixbiopharma.glucose.internal",
+            "certificate_hash": "5c70826ba39915803433e0846c2412beeaa0763a"
+          }
+        },
+        {
+          "client_id": "771073460511-dp3pdvtklff6j5hd25lqldu3l9vhdr15.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYuY7ZcxZOSPRDaErS_cPwdgHxAQM4RkY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771073460511-dp3pdvtklff6j5hd25lqldu3l9vhdr15.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

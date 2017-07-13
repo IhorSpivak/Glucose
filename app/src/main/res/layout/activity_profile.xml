@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.ixbiopharma.glucose.component.ToolbarView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/profile_pic"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="22dp"
+            fresco:placeholderImage="@drawable/avatar"
+            fresco:roundAsCircle="true" />
+
+        <TextView
+            android:id="@+id/name"
+            fontPath="fonts/Raleway-Bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            tools:text="Desiree Chua" />
+
+        <TextView
+            android:id="@+id/change_photo"
+            fontPath="fonts/OpenSans-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Change photo"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <TextView
+            fontPath="fonts/extra-bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:letterSpacing="0.1"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="Account"
+            android:textColor="#cccccc" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:alpha=".6"
+            android:background="@color/light_gray2" />
+
+        <com.ixbiopharma.glucose.component.SettingsItem
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            settings:settings_hide_arrow="true"
+            settings:settings_text="Email" />
+
+        <com.ixbiopharma.glucose.component.SettingsItem
+            android:layout_width="match_parent"
+            android:id="@+id/change_password"
+            android:layout_height="wrap_content"
+            settings:settings_text="Change password" />
+
+        <com.ixbiopharma.glucose.component.SettingsSwitchItem
+            android:id="@+id/glucose_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            settings:settings_switch1="mg/DI"
+            settings:settings_switch2="mmol/L"
+            settings:settings_switch_default="1"
+            settings:settings_text="Glucose Unit" />
+
+        <com.ixbiopharma.glucose.component.SettingsSwitchItem
+            android:id="@+id/measurement_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            settings:settings_switch1="Metric"
+            settings:settings_switch2="Non-Metric"
+            settings:settings_switch_default="1"
+            settings:settings_text="Measurement Unit" />
+
+        <TextView
+            fontPath="fonts/extra-bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:letterSpacing="0.1"
+            android:padding="16dp"
+            android:text="Settings"
+            android:textColor="#cccccc" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:alpha=".6"
+            android:background="@color/light_gray2" />
+
+        <com.ixbiopharma.glucose.component.SettingsItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            settings:settings_text="Privacy Settings" />
+
+        <com.ixbiopharma.glucose.component.SettingsSwitchItem
+            android:id="@+id/enable_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            settings:settings_text="Enable News" />
+
+        <com.ixbiopharma.glucose.component.SettingsSwitchItem
+            android:id="@+id/enable_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            settings:settings_switch_default="1"
+            settings:settings_text="Enable Tips" />
+
+        <com.ixbiopharma.glucose.component.SettingsSwitchItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            settings:settings_text="Enable Location" />
+
+        <com.ixbiopharma.glucose.component.SettingsSwitchItem
+            android:id="@+id/enable_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            settings:settings_switch_default="1"
+            settings:settings_text="Enable Notifications" />
+
+        <com.ixbiopharma.glucose.component.SettingsSwitchItem
+            android:id="@+id/save_to_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            settings:settings_text="Save Photos to Camera Roll" />
+
+        <TextView
+            fontPath="fonts/extra-bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:letterSpacing="0.1"
+            android:padding="16dp"
+            android:text="Support"
+            android:textColor="#cccccc" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:alpha=".6"
+            android:background="@color/light_gray2" />
+
+        <com.ixbiopharma.glucose.component.SettingsItem
+            android:id="@+id/faq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            settings:settings_text="FAQs" />
+
+        <com.ixbiopharma.glucose.component.SettingsItem
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            settings:settings_text="Provide Feedback" />
+
+        <TextView
+            android:id="@+id/logout"
+            fontPath="fonts/extra-bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/register_bg"
+            android:gravity="center"
+            android:text="logout"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:text="Version 1.0.0"
+            android:textColor="@color/light_gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            fontPath="fonts/extra-bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:paddingBottom="10dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:text="@string/which_meal_was_this"
+            android:textColor="@color/light_gray2"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <com.ixbiopharma.glucose.component.FoodType
+            android:id="@+id/foodType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_alert_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            fontPath="fonts/extra-bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:paddingBottom="10dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:text="@string/how_are_you_feeling"
+            android:textColor="@color/light_gray2"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <com.ixbiopharma.glucose.component.FeelingType
+            android:id="@+id/feelingType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                fontPath="fonts/Raleway-Bold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/glucose_level_reading"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                fontPath="fonts/OpenSans-Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/pre_and_post_meal_reading_allows_you_to_track_how_your_meals_affect_your_blood_glucose_level"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        fontPath="fonts/Raleway-Bold.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:letterSpacing="0.1"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:text="Pre-Meal (~4 hours after previous meal)"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_alert_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextStyle.ValueTitle"
+            android:layout_height="match_parent"
+            android:text="@string/reading" />
+
+        <TextView
+            android:id="@+id/pre_g"
+            fontPath="fonts/OpenSans-Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="@string/what_is_the_glucose_level"
+            android:maxLines="1"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textColorHint="@color/light_gray2" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_alert_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextStyle.ValueTitle"
+            android:layout_height="match_parent"
+            android:text="@string/time" />
+
+        <TextView
+            android:id="@+id/pre_t"
+            fontPath="fonts/OpenSans-Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="@string/what_time_was_it_taken"
+            android:maxLines="1"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textColorHint="@color/light_gray2" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_alert_gray" />
+
+    <TextView
+        fontPath="fonts/Raleway-Bold.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:letterSpacing="0.1"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:text="Post-meal (~2 hours after current meal)"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_alert_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextStyle.ValueTitle"
+            android:layout_height="match_parent"
+            android:text="@string/reading" />
+
+        <TextView
+            android:id="@+id/post_g"
+            fontPath="fonts/OpenSans-Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="@string/what_is_the_glucose_level"
+            android:maxLines="1"
+            android:paddingRight="15dp"
+
+            android:singleLine="true"
+            android:textColorHint="@color/light_gray2" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_alert_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextStyle.ValueTitle"
+            android:layout_height="match_parent"
+            android:text="@string/time" />
+
+        <TextView
+            android:id="@+id/post_t"
+            fontPath="fonts/OpenSans-Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="@string/what_time_was_it_taken"
+            android:maxLines="1"
+            android:paddingEnd="15dp"
+            android:singleLine="true"
+            android:textColorHint="@color/light_gray2" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_alert_gray" />
+</merge>

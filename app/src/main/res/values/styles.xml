@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="Fonts.Medium" parent="android:Widget.Holo.Light.TextView">
+        <item name="fontPath">fonts/medium.ttf</item>
+    </style>
+
+    <style name="Fonts.Extra_Bold" parent="android:Widget.Holo.Light.TextView">
+        <item name="fontPath">fonts/extra-bold.ttf</item>
+    </style>
+
+    <style name="TextStyle.ValueTitle" parent="Fonts.Extra_Bold">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/light_gray2</item>
+    </style>
+
+    <style name="TextStyle.Medium_12_bold" parent="Fonts.Medium">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textColor">@color/light_gray2</item>
+    </style>
+
+    <style name="TextInputLayoutHint" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/another_gray</item>
+        <item name="fontPath">fonts/Raleway-Bold.ttf</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/date"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:layout_below="@id/ex"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        style="@style/TextStyle.ValueTitle"
+        android:layout_height="match_parent"
+        android:text="TIME" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:paddingRight="6dp"
+            android:id="@+id/dateI"
+            android:src="@drawable/vcal" />
+
+        <TextView
+            android:id="@+id/dateT"
+            fontPath="fonts/OpenSans-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"
+            android:text="25 jan 2017"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:paddingRight="6dp"
+            android:id="@+id/timeI"
+            android:src="@drawable/time" />
+
+        <TextView
+            android:id="@+id/timeT"
+            fontPath="fonts/OpenSans-Regular.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="12:35"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+</LinearLayout>

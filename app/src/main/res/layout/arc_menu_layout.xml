@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ixbiopharma.glucose.component.ArcMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/arcMenu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_gravity="bottom|end"
+    app:menu_color="@color/color_orange"
+    app:menu_open="arc_left"
+    app:menu_scr="@drawable/ic_menu_plus">
+
+    <ImageView
+        android:id="@+id/btnFood"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/food_layer_list" />
+
+    <ImageView
+        android:id="@+id/btnException"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/exercise_layer_list" />
+
+    <ImageView
+        android:id="@+id/btnWeight"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/weight_layer_list" />
+
+    <ImageView
+        android:id="@+id/btnGlucose"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/glucose_layer_list" />
+
+</com.ixbiopharma.glucose.component.ArcMenu>

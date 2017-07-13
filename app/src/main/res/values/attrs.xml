@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MealItem">
+        <attr name="text" format="string" />
+        <attr name="iconRes" format="reference" />
+        <attr name="defaultColorRes" format="color" />
+        <attr name="selectedColorRes" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SettingsItem">
+        <attr name="settings_text" format="string" />
+        <attr name="settings_divider" format="boolean" />
+        <attr name="settings_hide_arrow" format="boolean"/>
+        <attr name="settings_switch1" format="string" />
+        <attr name="settings_switch2" format="string" />
+        <attr name="settings_switch_default" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="wave">
+        <attr name="wave_speed" format="integer" />
+        <attr name="wave_height" format="integer" />
+    </declare-styleable>
+</resources>

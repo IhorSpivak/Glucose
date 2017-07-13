@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ixbiopharma.glucose">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".GlucoseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".journal.JournalActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".value_picker.TypeValuePickerActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".exercise.ExerciseActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".news.detail.NewsDetailActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".search.SearchActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".news.NewsListActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".food.FoodActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".ChromeTab"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".profile.ProfileActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".food.FoodEditActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".login.login.LoginActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".login.register.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".login.forget.ForgetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".progress.ProgressActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="513c0c5d846c908ddc1901d312d5c68fab8a9197" />
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

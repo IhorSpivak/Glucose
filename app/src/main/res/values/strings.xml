@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Entity</string>
+    <string name="add_glucose">New Glucose Log</string>
+    <string name="add_ex">New Exercise Log</string>
+    <string name="title_activity_add_food">AddFood</string>
+
+    <string-array name="progress_time">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Yearly</item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="which_meal_was_this">WHICH MEAL WAS THIS?</string>
+    <string name="how_are_you_feeling">HOW ARE YOU FEELING?</string>
+    <string name="glucose_level_reading">Glucose Level Reading</string>
+    <string name="pre_and_post_meal_reading_allows_you_to_track_how_your_meals_affect_your_blood_glucose_level">Pre and post meal reading allows you to track how your meals affect your blood glucose level.</string>
+    <string name="pre_meal">PRE-MEAL</string>
+    <string name="reading">READING</string>
+    <string name="what_is_the_glucose_level">What is the glucose level?</string>
+    <string name="what_time_was_it_taken">What time was it taken?</string>
+    <string name="time">TIME</string>
+    <string name="post_meal">POST-MEAL</string>
+    <string name="pick_image_intent_text">Choose an image</string>
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ixbiopharma.glucose.component.ToolbarView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.ixbiopharma.glucose.component.LinearAlertError
+        android:id="@+id/alert_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingEnd="38dp"
+        android:paddingStart="38dp"
+        android:paddingTop="48dp">
+
+        <TextView
+            fontPath="fonts/Raleway-Medium.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="We’ll send you a password reset link to your email that you have registered with."
+            android:textSize="13sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:hintTextAppearance="@style/TextInputLayoutHint">
+
+            <EditText
+
+                fontPath="fonts/Raleway-Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="EMAIL"
+                android:id="@+id/email"
+                android:textColorHint="@color/another_gray"
+                android:singleLine="true"
+                android:paddingBottom="16dp"
+                android:textSize="14sp"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/reset"
+            fontPath="fonts/extra-bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/login_bg"
+            android:gravity="center"
+            android:text="reset password"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
